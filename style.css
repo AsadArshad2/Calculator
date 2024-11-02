@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    font-family: 'Helvetica', Arial, sans-serif; /* Set Helvetica as the font */
+
+}
+
+/* Calculator layout */
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 250px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Display styling */
+.display {
+    grid-column: span 4;
+    height: 60px;
+    background-color: #333;
+    color: #fff;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+.box {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Ensure buttons take full width of grid cells */
+    height: 60px;
+    font-size: 18px;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 120px;
+    cursor: pointer;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+/* Operator button color */
+.box.operator {
+    background-color: #f39c12; /* Orange for operators */
+    color: white;
+}
+
+/* Button interaction styling */
+.box:hover {
+    background-color: #dcdcdc;
+    transition: background-color 0.2s;
+}
+
+.box:active {
+    background-color: #d3d3d3;
+}
