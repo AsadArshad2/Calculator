@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const value = button.textContent;
 
             if (!isNaN(value)) {
-                // Number pressed
+                // num pressed
                 displayValue += value;
                 display.textContent = displayValue;
             } else if (value === "clear") {
